@@ -24,6 +24,6 @@ app.get('/home', (req,res)=>{
     res.sendFile(path.resolve(__dirname + '/views/home.html'));
 });
 
-app.listen(app.get("puerto"), ()=>{
+app.listen(app.get("PORT"), ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
