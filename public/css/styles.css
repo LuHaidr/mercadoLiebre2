@@ -37,21 +37,42 @@ header div.logo,
 header div.form {
   width: 50%;
 }
+
 header div.form .submit {
   margin-left: 10px;
   display: flex;
   justify-content: center;
+
 }
+
+header div.submit {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+
+
+}
+
+header div.form div.input {
+  border-radius: 20px;
+}
+
+
 
 header div.logo {
   padding: 10px;
 }
+
 header .form {
   display: flex;
   align-items: center;
   padding: 2px;
   font-size: 11px;
+  justify-content: center;
 }
+
 header nav div a {
   font-size: 12px;
   margin-left: 20px;
@@ -59,6 +80,7 @@ header nav div a {
   text-decoration: none;
   color: #000;
 }
+
 header nav div a:hover {
   color: #0044aa;
 }
@@ -68,14 +90,14 @@ header .form .input {
   border: 1px solid #000;
   outline: none;
   color: #666;
-  padding: 2px;
+  padding: 2% 8%;
+
 }
 
 header .form .submit {
   background-color: #fff;
   border: 1px solid #000;
   color: #666;
-  width: 10%;
 }
 
 div.burger-menu {
@@ -180,16 +202,19 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
+
 footer section {
-  
+
   margin-top: 10px;
   padding: 10px 0px;
 }
+
 footer section i {
   font-size: 2em;
   margin-bottom: 10px;
   color: #0044aa;
 }
+
 footer section i:hover {
   color: #a0931c;
 }
@@ -200,14 +225,20 @@ main.login form {
   padding: 10px;
   flex-direction: column;
 }
+
 main.login form input {
   padding: 6px;
   margin: 10px;
+  border-radius: 10px;
+  max-width: 350px;
+
 }
 
 main.login form input.boton {
   width: 20vw;
   justify-content: center;
+  max-width: 100px;
+  min-width: 50px;
 }
 
 main.register {
@@ -216,21 +247,31 @@ main.register {
   margin: auto;
   flex-direction: column;
 }
+
 main.register input {
   margin: 1%;
+  padding: 2px 22px;
+  border-radius: 8px;
+  max-width: 350px;
 }
-main.register input:focus {
-  color: rgb(52, 35, 210);
-}
+
 
 main.register h4 {
   margin-bottom: 5px;
   margin-top: 5px;
 }
-main.register #enviar, #borrar {
+
+main.register #enviar,
+#borrar {
   padding: 0 10px;
+  width: 20vw;
+  justify-content: center;
+  max-width: 100px;
+  min-width: 55px;
 }
-main.register #enviar:hover, #borrar:hover {
+
+main.register #enviar:hover,
+#borrar:hover {
   font-weight: 600;
 }
 
@@ -261,16 +302,19 @@ main.register #enviar:hover, #borrar:hover {
     width: 50%;
   }
 }
+
 @media (max-width: 768px) {
   nav {
     display: none;
   }
 }
+
 @media (min-width: 769px) {
   header div.top-header {
     flex-wrap: nowrap;
     justify-content: space-around;
     flex-basis: auto;
+    align-items: center;
   }
 
   main.login form {
@@ -280,34 +324,44 @@ main.register #enviar:hover, #borrar:hover {
   main section div.products article {
     width: 22%;
   }
+
   header nav div {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-self: auto;
-  
+
   }
 
   footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-   }
-  
-  footer section{    
+    justify-content: space-between;
+  }
+
+  footer section {
     flex-wrap: nowrap;
     margin: 8px;
+    width: 30%;
   }
+
   footer div {
     display: block;
-       
+    justify-content: center;
+    width: 100%;
+
   }
 }
 
 @media (min-width: 770px) and (max-width: 1000px) {
-     article div.main-article {
-      flex-direction: column;
-  }}
-  @media (min-width: 362px) and (max-width: 500px) {
-    article div.main-article {
-     flex-direction: column;
- }}
+  article div.main-article {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 362px) and (max-width: 500px) {
+  article div.main-article {
+    flex-direction: column;
+  }
+}
