@@ -60,6 +60,7 @@ header div.submit {
 
 header div.form div.input {
   border-radius: 20px;
+
 }
 
 
@@ -227,11 +228,19 @@ footer section i:hover {
   color: #a0931c;
 }
 
+main.login {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 main.login form {
   width: 80vw;
   display: flex;
   padding: 10px;
   flex-direction: column;
+  
+  
 }
 
 main.login form input {
@@ -239,14 +248,19 @@ main.login form input {
   margin: 10px;
   border-radius: 10px;
   max-width: 350px;
-
+  border: none;
+  
+  
 }
 
 main.login form input.boton {
   width: 20vw;
-  justify-content: center;
+  
   max-width: 100px;
   min-width: 50px;
+  background-color: #032f70;
+  color: aliceblue;
+  
 }
 
 main.register {
@@ -261,6 +275,7 @@ main.register input {
   padding: 2px 22px;
   border-radius: 8px;
   max-width: 350px;
+  border: none;
 }
 
 
@@ -271,17 +286,20 @@ main.register h4 {
 
 main.register #enviar,
 #borrar {
-  padding: 0 10px;
   width: 20vw;
   justify-content: center;
   max-width: 100px;
-  min-width: 55px;
+  min-width: 50px;
+  background-color: #032f70;
+  color: aliceblue;
 }
 
 main.register #enviar:hover,
-#borrar:hover {
+#borrar:hover, main.login form input.boton:hover {
   font-weight: 600;
 }
+
+
 
 
 @media (min-width: 361px) {
