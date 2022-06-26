@@ -7,7 +7,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ebebeb;
+  height: 100vh;
 }
+
+
 
 h3 {
   font-size: 24px;
@@ -91,7 +94,10 @@ header .form .input {
   outline: none;
   color: #666;
   padding: 2% 8%;
+}
 
+header .form .input i.fa.fa-search {
+  justify-content: row-reverse;
 }
 
 header .form .submit {
@@ -161,6 +167,7 @@ main section article {
 }
 
 main section article img {
+  padding-top: 7px;
   width: 100%;
 }
 
@@ -195,6 +202,7 @@ article div.main-article {
   border-top: 1px solid #ebebeb;
   position: relative;
   padding: 15px;
+  
 }
 
 footer {
@@ -283,6 +291,8 @@ main.register #enviar:hover,
 
   main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 0.3s;
+    transform: scale(1.02);
   }
 
   main section div.products {
@@ -291,6 +301,7 @@ main.register #enviar:hover,
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 10px;
   }
 
   main section div.products article {
@@ -335,6 +346,7 @@ main.register #enviar:hover,
 
   footer {
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
