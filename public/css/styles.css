@@ -177,9 +177,11 @@ article div.main-article {
 
 footer {
   background-color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
 }
 footer section {
-  text-align: center;
+  
   margin-top: 10px;
   padding: 10px 0px;
 }
@@ -225,14 +227,13 @@ main.register h4 {
   margin-bottom: 5px;
   margin-top: 5px;
 }
-main.register #enviar:hover {
-  background-color: yellow;
-  color: #ebebeb;
+main.register #enviar, #borrar {
+  padding: 0 10px;
 }
-main.register #borrar:hover {
-  background-color: red;
-  color: #ebebeb;
+main.register #enviar:hover, #borrar:hover {
+  font-weight: 600;
 }
+
 
 @media (min-width: 361px) {
   main section article .description {
@@ -284,15 +285,29 @@ main.register #borrar:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-self: auto;
+  
   }
 
   footer {
     display: flex;
-  }
-  footer section{
+    align-items: center;
+   }
+  
+  footer section{    
     flex-wrap: nowrap;
+    margin: 8px;
   }
   footer div {
-    flex-wrap: wrap;
+    display: block;
+       
   }
 }
+
+@media (min-width: 770px) and (max-width: 1000px) {
+     article div.main-article {
+      flex-direction: column;
+  }}
+  @media (min-width: 362px) and (max-width: 500px) {
+    article div.main-article {
+     flex-direction: column;
+ }}
